@@ -27,3 +27,10 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
         fields = ['id', 'username', 'email', 'password', 'user_tasks']
+
+
+class MyTasksSerializer(serializers.HyperlinkedModelSerializer):
+
+    class Meta:
+        model = User
+        fields = ['id', 'username', 'email', 'password', 'user_tasks']
